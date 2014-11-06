@@ -30,8 +30,10 @@ def parse_args(argv):
     return args
 
 
-def main(argv=[__name__]):
+def main(argv=None):
     """ Run this program """
+    if argv is None:
+        argv = [__name__]
     args = parse_args(argv)
     try:
 
